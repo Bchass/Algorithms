@@ -18,20 +18,20 @@ public class QuickSort{
         }
 
         System.out.println("The values you have entered");
-        printArr(arr);
+        System.out.println(printArr(arr));
 
         sc.close();
     }
 
     // Method to print user inputs values to an array
     // if true numbers will print -- > array 
-    public static void printArr(int [] arr){
+    public static boolean printArr(int [] arr){
 
         int x = arr.length;
 
         for(int i = 0; i < x; i++){
             System.out.print(arr[i] + " ");
         }
-
+        return true;
     }
 }
