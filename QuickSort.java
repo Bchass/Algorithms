@@ -17,8 +17,8 @@ public class QuickSort{
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("The values you have entered");
-        System.out.println(printArr(arr));
+        System.out.println("The values you have entered:");
+        System.out.println("= " + printArr(arr));
 
         sc.close();
     }
