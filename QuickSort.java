@@ -22,7 +22,7 @@ public class QuickSort {
             }
 
             System.out.println("The values you have entered:");
-            System.out.println("= " + printArr(arr));
+            System.out.println(" = " + Arrays.toString(arr) + printArr(arr));
 
             sc.close();
 
