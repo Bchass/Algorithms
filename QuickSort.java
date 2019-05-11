@@ -14,12 +14,13 @@ public class QuickSort {
             int n = sc.nextInt();
 
             int arr[] = new int[n];
-            QS(arr, 0, arr.length - 1);
             System.out.println("Enter the " + n + " values with spaces between");
 
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
+
+            QS(arr, 0, arr.length - 1);
 
             System.out.println("The values you have entered:");
             System.out.println(" = " + Arrays.toString(arr) + printArr(arr));
