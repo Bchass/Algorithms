@@ -19,7 +19,7 @@ public class QuickSort {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
-
+            // Calls methods to apply QS
             QS(arr, 0, arr.length - 1);
 
             System.out.println("The values you have entered:");
@@ -44,22 +44,24 @@ public class QuickSort {
         }
         return true;
     }
+
     // Call upon pivot method
-    public static void QS(int arr [], int start, int end){
-        if(start < end){
+    public static void QS(int arr[], int start, int end) {
+        if (start < end) {
             int partitionIndex = partition(arr, start, end);
 
             QS(arr, start, partitionIndex - 1);
             QS(arr, partitionIndex + 1, end);
         }
     }
+
     // Method to find pivot
-    private static int partition(int arr [], int start, int end){
+    private static int partition(int arr[], int start, int end) {
         int pivot = arr[end];
         int i = (start - 1);
 
-        for(int x = start; x < end; x++){
-            if(arr[x] <= pivot){
+        for (int x = start; x < end; x++) {
+            if (arr[x] <= pivot) {
                 i++;
 
                 int temp = arr[i];
