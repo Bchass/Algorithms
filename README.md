@@ -1,6 +1,6 @@
 # Algorithms
 -----
-- Different sorting alogrithms in Java 
+- Will be updated with new algorithms as time goes on 
 
 
 <b>QuickSort</b> (I've decided to add users input for QuickSort just as a test)
