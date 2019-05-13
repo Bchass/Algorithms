@@ -21,9 +21,10 @@ public class QuickSort {
             }
             // Calls methods to apply QS
             QS(arr, 0, arr.length - 1);
-
+            
             System.out.println("The values you have entered:");
-            System.out.println(" = " + Arrays.toString(arr) + printArr(arr));
+            System.out.println(" = " + printArr(arr));
+            System.out.println("QuickSort applied: "+ Arrays.toString(arr));
 
             sc.close();
 
