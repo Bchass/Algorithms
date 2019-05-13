@@ -4,7 +4,7 @@ public class SelectionSort {
         int x = arr.length;
         for (int i = 0; i < x; i++) {
             // Index of min
-            int min = 1;
+            int min = i;
 
         }
 
