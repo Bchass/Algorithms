@@ -9,6 +9,10 @@ public class SelectionSort {
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[min]) {
                     min = j;
+                    // swap min with first element
+                    int temp = arr[min];
+                    arr[min] = arr[i];
+                    arr[i] = min;
                 }
             }
 
