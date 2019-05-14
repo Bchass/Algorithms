@@ -1,5 +1,5 @@
 public class SelectionSort {
-    public static void main(String[] args) {
+    void sort (int arr []) {
         // move boundary within array
         int n = arr.length;
         for (int i = 0; i < n; i++) {
