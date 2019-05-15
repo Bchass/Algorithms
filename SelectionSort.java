@@ -29,7 +29,9 @@ public class SelectionSort {
     // Driver
     public static void main(String [] args)
     {
+        SelectionSort ss = new SelectionSort();
         int arr [] = {3, 78, 90, 22, 33, 41, 2};
-        System.out.println(arr);
+        ss.sort(arr);
+        ss.printArray(arr);
     }
 }
