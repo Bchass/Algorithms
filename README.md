@@ -11,9 +11,7 @@
   </p>
   
 - Worst Case: O(<i>n</i><sup>2</sup>)
-- Best Case: O(<i>n</i> log <i>n</i>) (simple partition) 
-
-  or O(<i>n</i>) (three-way partition and equal keys)
+- Best Case: O(<i>n</i> log <i>n</i>) (simple partition) or O(<i>n</i>) (three-way partition and equal keys)
 - Average: O(<i>n</i> log <i>n</i>)
   
 <b>Selection sort</b>
