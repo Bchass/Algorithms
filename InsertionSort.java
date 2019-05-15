@@ -16,10 +16,20 @@ public class InsertionSort {
         }
     }
 
+    // Print the given array
+    void printArray(int arr[]) {
+        int n = arr.length;
+        for (int j = 1; j < n; j++) {
+            System.out.println(arr[j] + " ");
+            System.out.println();
+        }
+    }
+
     // Driver
     public static void main(String[] args) {
         int arr[] = { 23, 45, 3, 5, 11 };
         InsertionSort sort = new InsertionSort();
         sort.sort(arr);
+        sort.printArray(arr);
     }
 }
