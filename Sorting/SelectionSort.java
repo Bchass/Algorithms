@@ -1,3 +1,4 @@
+package Sorting;
 public class SelectionSort {
     void sort(int arr[]) {
         // move boundary within array
