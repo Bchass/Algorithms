@@ -2,7 +2,7 @@ public class SelectionSort {
     void sort(int arr[]) {
         // move boundary within array
         int n = arr.length;
-        for (int i = 0; i < n-1; i++) {
+        for (int i = 0; i < n - 1; i++) {
             // Index of min
             int min = i;
             // Find min within the array
@@ -26,11 +26,11 @@ public class SelectionSort {
             System.out.println();
         }
     }
+
     // Driver
-    public static void main(String [] args)
-    {
+    public static void main(String[] args) {
         SelectionSort ss = new SelectionSort();
-        int arr [] = {3, 78, 90, 22, 33, 41, 2};
+        int arr[] = { 3, 78, 90, 22, 33, 41, 2 };
         ss.sort(arr);
         ss.printArray(arr);
     }
