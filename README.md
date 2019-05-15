@@ -3,7 +3,7 @@
 - Will be updated with new algorithms as time goes on 
 
 
-<b>Quick Sort</b> 
+<b>Quicksort</b> 
 
 <i>(I've decided to add users input as a test)</i>
 <p align="left">
@@ -11,10 +11,12 @@
   </p>
   
 - Worst Case: O(<i>n</i><sup>2</sup>)
-- Best Case: O(<i>n</i> log <i>n</i>)
+- Best Case: O(<i>n</i> log <i>n</i>) (simple partition) 
+
+  or O(<i>n</i>) (three-way partition and equal keys)
 - Average: O(<i>n</i> log <i>n</i>)
   
-<b>Selection Sort</b>
+<b>Selection sort</b>
 <p align="left">
 <img width="100" height="371" src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif">
   </p>
@@ -23,7 +25,7 @@
 - Best Case: О(<i>n</i><sup>2</sup>) comparisons, О(<i>n</i>) swaps
 - Average: О(<i>n</i><sup>2</sup>) comparisons, О(<i>n</i>) swaps
 
-<b>Insertion Sort</b>
+<b>Insertion sort</b>
 <p align="left">
 <img width="193" height="302" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif">
   </p>
