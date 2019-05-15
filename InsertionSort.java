@@ -10,7 +10,16 @@ public class InsertionSort {
 
                 i--;
             }
+            // Place key in the correct postion
+            arr[i + 1] = key;
 
         }
+    }
+
+    // Driver
+    public static void main(String[] args) {
+        int arr[] = { 23, 45, 3, 5, 11 };
+        InsertionSort sort = new InsertionSort();
+        sort.sort(arr);
     }
 }
