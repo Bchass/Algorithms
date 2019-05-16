@@ -3,7 +3,9 @@
 - Will be updated with new algorithms as time goes on 
 
 
-<b>Quicksort</b> 
+<b>Quicksort</b>
+
+<b>Class:</b> Sorting algorithm
 
 <i>(I've decided to add users input as a test)</i>
 <p align="left">
@@ -15,6 +17,8 @@
 - Average: O(<i>n</i> log <i>n</i>)
   
 <b>Selection sort</b>
+
+<b>Class:</b> Sorting algorithm
 <p align="left">
 <img width="100" height="371" src="https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif">
   </p>
@@ -24,6 +28,8 @@
 - Average: О(<i>n</i><sup>2</sup>) comparisons, О(<i>n</i>) swaps
 
 <b>Insertion sort</b>
+
+<b>Class:</b> Sorting algorithm
 <p align="left">
 <img width="193" height="302" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Insertion_sort.gif">
   </p>
@@ -31,5 +37,16 @@
 - Worst Case: О(<i>n</i><sup>2</sup>) comparisons and swaps
 - Best Case: O(n) comparisons, O(1) swaps
 - Average: О(<i>n</i><sup>2</sup>) comparisons and swaps
+
+<b>Linear search</b>
+
+<b>Class:</b> Search algorithm
+<p align="left">
+<img width="438" height="180" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif">
+  </p>
+  
+- Worst Case: O(<i>n</i>)
+- Best Case: O(1)
+- Average: O(<i>n</i>)
   
 
