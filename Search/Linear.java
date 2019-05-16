@@ -16,11 +16,12 @@ class Linear {
         int arr[] = { 3, 46, 78, 90, 23, 5, 67, 4 };
         // The given target to find
         int x = 4;
-
+        // Calls upond search function
         int result = search(arr, x);
-        if (result == -1)
-            ;
-        System.out.println("Target is not present");
-        System.out.println("Target is present at index " + result);
+        if (result == -1) {
+            System.out.println("Target is not present");
+        } else {
+            System.out.println("Target is present at index " + result);
+        }
     }
 }
