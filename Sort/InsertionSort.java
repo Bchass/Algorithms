@@ -1,4 +1,4 @@
-package Sorting;
+package Sort;
 public class InsertionSort {
     void sort(int arr[]) {
         int n = arr.length;
