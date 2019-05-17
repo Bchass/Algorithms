@@ -48,5 +48,16 @@
 - Worst Case: O(<i>n</i>)
 - Best Case: O(1)
 - Average: O(<i>n</i>)
+
+<b>Binary search</b>
+
+<b>Class:</b> Search algorithm
+<p align="left">
+<img width="425" height="300" src="https://ds055uzetaobb.cloudfront.net/brioche/uploads/bePceUMnSG-binary_search_gif.gif?">
+  </p>
+  
+- Worst Case: O(log <i>n</i>)
+- Best Case: O(1)
+- Average: O(log <i>n</i>)
   
 
