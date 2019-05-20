@@ -6,7 +6,7 @@ class Binary {
 
         if (r >= 1) {
             int middle = 1 + (r - 1) / 2;
-
+            // If index is found in the middle
             if (arr[middle] == x) {
                 return -1;
             }
