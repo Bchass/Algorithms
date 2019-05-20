@@ -8,7 +8,7 @@ class Binary {
             int middle = 1 + (k - 1) / 2;
             // If index is found in the middle
             if (arr[middle] == x) {
-                return -1;
+                return middle;
             }
         }
 
