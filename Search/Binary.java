@@ -22,17 +22,17 @@ class Binary {
 
     // Driver
     public static void main(String[] args) {
-        int arr[] = { 4, 89, 90, 3, 22, 45, 6, 8, 88 };
+        int arr[] = { 2, 9, 80, 77, 36, 1, 5, 4};
         Binary by = new Binary();
         // Find the given index
-        int x = 4;
+        int x = 9;
         int n = arr.length;
         // binary function
         int result = by.binary(arr, 0, n - 1, x);
         if (result == -1) {
             System.out.println("Target is not present");
         } else {
-            System.out.println("Target is present at index" + result);
+            System.out.println("Target is present at index " + result);
         }
     }
 }
