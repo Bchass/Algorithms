@@ -10,14 +10,13 @@ class Binary {
             if (arr[middle] == x) 
                 return middle;
             // If element is smaller than index x, left side of array
-            if(arr[middle] > x){
+            if(arr[middle] > x)
                 return Binary(arr,1,middle -1,x);
                 // Element right side of array
                 return Binary(arr,middle+1,k,x);
             }
-            // Return -1 if elemenent is not present in the index
-            return - 1;
-        }
+        // Return -1 if elemenent is not present in the index
+        return - 1;
 
     }
 }
