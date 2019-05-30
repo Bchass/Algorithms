@@ -38,6 +38,15 @@
 - Best Case: O(n) comparisons, O(1) swaps
 - Average: О(<i>n</i><sup>2</sup>) comparisons and swaps
 
+<b>Bubble sort</b>
+<p align="left">
+<img width="280" height="237" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif">
+  </p>
+  
+- Worst Case: O(<i>n</i><sup>2</sup>) comparisons, O(<i>n</i><sup>2</sup>) O(<i>n</i><sup>2</sup>) swaps
+- Best Case: O(<i>n</i>) comparisons, O(1) O(1) swaps
+- Average: O(<i>n</i><sup>2</sup>) comparisons, O(<i>n</i><sup>2</sup>) O(<i>n</i><sup>2</sup>) swaps
+
 <b>Linear search</b>
 
 <b>Class:</b> Search algorithm
