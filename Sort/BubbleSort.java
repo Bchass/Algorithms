@@ -1,5 +1,5 @@
 public class BubbleSort {
-    public static void bubbleSort() {
+    void sort(int arr[]) {
 
         boolean sorted = false;
         // break if inner loop was swapped
@@ -19,15 +19,24 @@ public class BubbleSort {
     }
 
     {
+    }
+
+    // Print given array
+    void printArray(int arr[]) {
+        int n = a.length;
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
+            System.out.println();
+
         }
 
     }
 
     // Driver
-    public static void main(String[]args){
+    public static void main(String[] args) {
+        BubbleSort bs = new BubbleSort();
         int[] a = { 8, 4, 3, 5, 7 };
-        int size = a.length;
+        bs.sort(a);
+        bs.printArray(a);
     }
 }
