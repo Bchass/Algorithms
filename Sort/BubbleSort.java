@@ -9,10 +9,6 @@ public class BubbleSort {
 
     }
 
-    {
-
-    }
-
     // Print given array
     void printArray(int arr[]) {
         int n = a.length;
