@@ -24,7 +24,7 @@ public class BubbleSort {
     }
 
     // Print given array
-    static void printArray(int arr[]) {
+    static void printArray(int arr[], int size) {
         int n = a.length;
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
