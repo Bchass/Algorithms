@@ -1,33 +1,33 @@
 public class BubbleSort {
-    void sort(int arr[]) {
+    void sort(int arr[], int n) {
 
         int i, j, temp;
         boolean swapped;
-        for (i = 0; i < a.length; i++) {
+        for (i = 0; i < n - 1; i++) {
 
         }
         swapped = false;
         for (j = 0; j < n - 1; j++) {
-            if (a[j] > a[j + 1]) {
+            if (arr[j] > arr[j + 1]) {
                 // switch a[j] & a[j + 1]
-                temp = a[j];
-                a[j] = a[j + 1];
-                a[j + 1] = temp;
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
                 swapped = true;
 
             }
         }
         // If nothing was switched then break
-        if(swapped == false)
-        break;
+        if (swapped == false)
+            break;
 
     }
 
     // Print given array
     static void printArray(int arr[], int size) {
-        int n = a.length;
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
+        int i;
+        for (i = 0; i < size; i++) {
+            System.out.println(arr[i]);
             System.out.println();
 
         }
@@ -37,8 +37,9 @@ public class BubbleSort {
     // Driver
     public static void main(String[] args) {
         BubbleSort bs = new BubbleSort();
-        int[] a = { 8, 4, 3, 5, 7 };
-        bs.sort(a);
-        bs.printArray(a, n);
+        int arr[] = { 8, 4, 3, 5, 7 };
+        int n = arr.length;
+        bs.sort(arr, n);
+        printArray(arr, n);
     }
 }
