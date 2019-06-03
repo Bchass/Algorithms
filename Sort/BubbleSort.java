@@ -18,8 +18,8 @@ public class BubbleSort {
             }
         }
         // If nothing was switched then break
-        if (swapped == false)
-            break;
+        // if (swapped == false)
+        //     break;
 
     }
 
