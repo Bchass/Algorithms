@@ -17,6 +17,7 @@ public class BubbleSort {
 
             }
         }
+        //TODO: 
         // If nothing was switched then break
         // if (swapped == false)
         //     break;
