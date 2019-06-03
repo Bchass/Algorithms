@@ -2,7 +2,7 @@ public class BubbleSort {
     void sort(int arr[], int n) {
 
         int i, j, temp;
-        boolean swapped;
+        //boolean swapped;
         for (i = 0; i < n - 1; i++) {
 
         }
