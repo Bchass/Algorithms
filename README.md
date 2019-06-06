@@ -68,5 +68,10 @@
 - Worst Case: O(log <i>n</i>)
 - Best Case: O(1)
 - Average: O(log <i>n</i>)
-  
 
+<b>K-Means</b>
+
+<b>Class:</b> Clustering algorithm
+<p align="left">
+  <img width="417" height="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/617px-K-means_convergence.gif">
+  </p>
