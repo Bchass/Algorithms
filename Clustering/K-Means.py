@@ -1,3 +1,5 @@
+import pandas as pd
+
 class kmeans:
 
     def __init__(self, k = 4, tolerance = 0.0001, max_its = 1000):
