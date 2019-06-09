@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from numpy import genfromtxt
 import csv
 
 class kmeans:
@@ -13,4 +14,4 @@ class kmeans:
 with open ('datapoints.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        print(row['RC'], row['LC'])
+        print(row['LC'], row['RC'])
