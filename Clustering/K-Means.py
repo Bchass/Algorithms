@@ -33,3 +33,9 @@ def ED(one,two):
 # start the process of centroids for k
     for i in range(self.k):
         self.centroids[i] = data[i]
+
+# enter into loop
+    for i in range(self.max_its):
+        self.classes = {}
+        for i in range(self.k):
+            self.classes[i] = {}
