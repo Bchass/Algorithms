@@ -39,3 +39,9 @@ def ED(one,two):
         self.classes = {}
         for i in range(self.k):
             self.classes[i] = {}
+
+# distance between point and centroid
+    for features in data:
+        distances = [np.linalg.norm(features - self.centroids[centroids]) for centroid in self.centroids]
+        classfication = distances.index(min(distances))
+        self.classes[classfication].append(features)
