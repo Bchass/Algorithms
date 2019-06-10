@@ -28,3 +28,7 @@ def ED(one,two):
         sqd += (one[i] - two[i])**2
     ed = sqrt(sqd)
     return ed;
+
+# start the process of centroids for k
+for i in range(self.k):
+    self.centroids[i] = data[i]
