@@ -18,7 +18,7 @@ with open ('datapoints.csv') as csvfile:
 
 # Euclidean Distance (length between two points)
 
-def Euclidean_Distance(one,two):
+def ED(one,two):
     sqd = 0
 
     #if two lengths of features are the same
