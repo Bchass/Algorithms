@@ -16,7 +16,7 @@ with open ('datapoints.csv') as csvfile:
     for row in reader:
         print(row['LC'], row['RC'])
 
-# Euclidean Distance
+# Euclidean Distance (length between two points)
 
 def Euclidean_Distance(one,two):
     sqd = 0
