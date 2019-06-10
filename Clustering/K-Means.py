@@ -17,6 +17,8 @@ with open ('datapoints.csv') as csvfile:
         print(row['LC'], row['RC'])
 
 # Euclidean Distance (length between two points)
+# Forumla that is beling calculated: 
+# https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
 def ED(one,two):
     sqd = 0
