@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import csv
+import math
 
 class kmeans:
 
@@ -14,3 +15,14 @@ with open ('datapoints.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         print(row['LC'], row['RC'])
+
+# Euclidean Distance
+
+def Euclidean_Distance(one,two):
+    sqd = 0
+
+    #if two lengths of features are the same
+    for i in range(ln(one)):
+        sqd += (one[i] - two[i])**2
+    ed = sqrt(sqd)
+    return ed;
