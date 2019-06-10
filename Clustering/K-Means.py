@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import csv
 import math
+from math import sqrt
 
 class kmeans:
 
