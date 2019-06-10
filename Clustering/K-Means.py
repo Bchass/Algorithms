@@ -30,5 +30,5 @@ def ED(one,two):
     return ed;
 
 # start the process of centroids for k
-for i in range(self.k):
-    self.centroids[i] = data[i]
+    for i in range(self.k):
+        self.centroids[i] = data[i]
