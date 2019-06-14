@@ -24,7 +24,7 @@ with open ('datapoints.csv') as csvfile:
 # Formula that is beling calculated: 
 # https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
-def ED(one,two,self):
+def ED(one,two,self,data,ln,centroids):
     sqd = 0
 
     #if two lengths of features are the same
