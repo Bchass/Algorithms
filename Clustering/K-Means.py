@@ -45,3 +45,9 @@ def ED(one,two):
         distances = [np.linalg.norm(features - self.centroids[centroids]) for centroid in self.centroids]
         classfication = distances.index(min(distances))
         self.classes[classfication].append(features)
+
+#recalc distance between centroids
+
+previous = dict(self.centroids)
+for classfication in self.classes:
+    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
