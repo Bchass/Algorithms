@@ -53,5 +53,7 @@ isOptimal = True
 def main():
     df = df[['LC', 'RC']]
     dataset = df.astype(float).values.tolist()
-
+    # put data into array
     X = df.values
+    # read the data
+    df = pd.read_csv(r".\desktop\datapoints.csv")
