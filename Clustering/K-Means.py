@@ -3,9 +3,6 @@
 
 import pandas as pd
 import numpy as np
-import csv
-import math
-from math import sqrt
 
 class kmeans:
 
@@ -14,20 +11,15 @@ class kmeans:
        self.tolerance = tolerance
        self.max_its = max_its
 
-# Read in datapoints from csv file
-with open ('datapoints.csv') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        print(row['LC'], row['RC'])
-
 # Euclidean Distance (length between two points)
 # Formula that is beling calculated: 
 # https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
 def ED(self,data):
     sqd = 0
+    self.centroids = {}
 
-    #if two lengths of features are the same
+    # if two lengths of features are the same
     for i in range(ln(one)):
         sqd += (one[i] - two[i])**2
     ed = sqrt(sqd)
@@ -41,7 +33,7 @@ def ED(self,data):
     for i in range(self.max_its):
         self.classes = {}
         for i in range(self.k):
-            self.classes[i] = {}
+            self.classes[i] = []
 
 # distance between point and centroid
     for features in data:
@@ -49,9 +41,4 @@ def ED(self,data):
         classfication = distances.index(min(distances))
         self.classes[classfication].append(features)
 
-# recalc distance between centroids
-previous = dict(self.centroids)
-for classfication in self.classes:
-    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
-# Flag
-isOptimal = True
+def main():
