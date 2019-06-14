@@ -1,3 +1,5 @@
+# An intro for myself: http://madhugnadig.com/articles/machine-learning/2017/03/04/implementing-k-means-clustering-from-scratch-in-python.html
+
 import pandas as pd
 import numpy as np
 import csv
