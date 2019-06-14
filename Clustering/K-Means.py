@@ -24,7 +24,7 @@ with open ('datapoints.csv') as csvfile:
 # Formula that is beling calculated: 
 # https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
-def ED(one,two,self,data,ln,centroids):
+def ED(self,data):
     sqd = 0
 
     #if two lengths of features are the same
@@ -45,7 +45,7 @@ def ED(one,two,self,data,ln,centroids):
 
 # distance between point and centroid
     for features in data:
-        distances = [np.linalg.norm(features - self.centroids[centroids]) for centroid in self.centroids]
+        distances = [np.linalg.norm(features - self.centroids[centroid]) for centroid in self.centroids]
         classfication = distances.index(min(distances))
         self.classes[classfication].append(features)
 
@@ -54,4 +54,4 @@ previous = dict(self.centroids)
 for classfication in self.classes:
     self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
 # Flag
-Optimal = True                         
+isOptimal = True
