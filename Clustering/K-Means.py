@@ -21,7 +21,7 @@ with open ('datapoints.csv') as csvfile:
 # Formula that is beling calculated: 
 # https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
-def ED(one,two):
+def ED(one,two,self):
     sqd = 0
 
     #if two lengths of features are the same
@@ -47,7 +47,6 @@ def ED(one,two):
         self.classes[classfication].append(features)
 
 #recalc distance between centroids
-
 previous = dict(self.centroids)
 for classfication in self.classes:
-    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
+    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)                         
