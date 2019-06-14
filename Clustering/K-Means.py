@@ -46,7 +46,9 @@ def ED(one,two,self):
         classfication = distances.index(min(distances))
         self.classes[classfication].append(features)
 
-#recalc distance between centroids
+# recalc distance between centroids
 previous = dict(self.centroids)
 for classfication in self.classes:
-    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)                         
+    self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
+# Flag
+Optimal = True                         
