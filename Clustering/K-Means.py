@@ -3,6 +3,8 @@
 
 import pandas as pd
 import numpy as np
+import math
+from math import sqrt
 
 class kmeans:
 
@@ -15,12 +17,12 @@ class kmeans:
 # Formula that is beling calculated: 
 # https://wikimedia.org/api/rest_v1/media/math/render/svg/795b967db2917cdde7c2da2d1ee327eb673276c0
 
-def ED(self,data):
-    sqd = 0
+def ED(self,data,one,two):
     self.centroids = {}
-
+    # squared distance
+    sqd = 0
     # if two lengths of features are the same
-    for i in range(ln(one)):
+    for i in range(len(one)):
         sqd += (one[i] - two[i])**2
     ed = sqrt(sqd)
     return ed;
@@ -41,4 +43,15 @@ def ED(self,data):
         classfication = distances.index(min(distances))
         self.classes[classfication].append(features)
 
+        # recalc distance between centroids
+    previous = dict(self.centroids)
+    for classfication in self.classes:
+        self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
+# Flag
+isOptimal = True
+
 def main():
+    df = df[['LC', 'RC']]
+    dataset = df.astype(float).values.tolist()
+
+    X = df.values
