@@ -1,5 +1,9 @@
+# =======================================================================================================================
 # An intro for myself: 
 # http://madhugnadig.com/articles/machine-learning/2017/03/04/implementing-k-means-clustering-from-scratch-in-python.html
+# 
+# Creating the algorithm based off the instructions given in the article 
+# =======================================================================================================================
 
 import pandas as pd
 import numpy as np
