@@ -47,8 +47,20 @@ def ED(self,data,one,two):
     previous = dict(self.centroids)
     for classfication in self.classes:
         self.centroids[classfication] = np.average(self.classes[classfication], axis = 0)
-# Flag
-isOptimal = True
+    # Flag
+    isOptimal = True
+    # loop through old centroids with new centroids
+    for centroid in self.centroids:
+
+        OC = previous[centroid]
+        curr = self.centroids[centroid]
+
+        if np.sum((curr - OC)/OC * 100) > self.tolerance:
+            isOptimal = False
+
+    # break out of main loop
+        if isOptimal:
+             break
 
 def main():
     df = df[['LC', 'RC']]
