@@ -75,8 +75,11 @@ def main():
     # read the data
     df = pd.read_csv(r".\desktop\datapoints.csv")
 
-    km = K-Means(4)
+    km = kmeans(4)
     km.fit(X)
+
+    # Plot begins
+    colors = 10*["r", "g", "c", "b", "k"]
 
      # Mark centroids with x
     for centroid in km.centroids:
