@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import math
 from math import sqrt
-import matplotlib
+import matplotlib.pyplot as plt
 
 class kmeans:
 
@@ -74,3 +74,17 @@ def main():
     X = df.values
     # read the data
     df = pd.read_csv(r".\desktop\datapoints.csv")
+
+    km = K-Means(4)
+    km.fit(X)
+
+     # Mark centroids with x
+    for centroid in km.centroids:
+        plt.scatter(km.centroids[centroid][0], km.centroids[centroid][1], s = 130, marker = "x")
+
+        for classfication in km.classes:
+            color = colors[classfication]
+            for features in km.classes[classfication]:
+                plt.scatter(features[0], features[1], color = color, s = 130)
+
+                plt.show()
