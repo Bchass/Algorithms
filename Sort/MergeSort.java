@@ -5,7 +5,6 @@ public class MergeSort {
         int n1 = m - x + 1;
         int n2 = l - m;
 
-
         // Temp arrays
         int M[] = new int[n1];
         int L[] = new int[n2];
