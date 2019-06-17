@@ -47,6 +47,15 @@
 - Best Case: O(<i>n</i>) comparisons, O(1) O(1) swaps
 - Average: O(<i>n</i><sup>2</sup>) comparisons, O(<i>n</i><sup>2</sup>) O(<i>n</i><sup>2</sup>) swaps
 
+<b>Merge sort<b>
+<p align="left">
+<img width="300" height="220" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif">
+  </p>
+  
+- Worst Case: O(<i>n</i> log <i>n</i>)
+- Best Case: O(<i>n</i> log <i>n</i>) typical, O(<i>n</i>) natural variant
+- Average: O(<i>n</i> log <i>n</i>)
+
 <b>Linear search</b>
 
 <b>Class:</b> Search algorithm
