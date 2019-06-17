@@ -16,6 +16,8 @@ public class MergeSort {
                 L[j] = arr[m + 1 + j];
             }
         }
+        // Indexes of arrays
+        int i = 0; int j = 0;
 
     }
 }
