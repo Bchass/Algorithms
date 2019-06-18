@@ -54,7 +54,7 @@ public class MergeSort {
     public static void main(String[] args) {
         MergeSort ms = new MergeSort();
         int arr[] = { 3, 90, 56, 22, 8, 4, 2 };
-        ms.sort(arr);
+        ms.sort(arr, 0, 0, arr.length - 1);
         ms.printArray(arr);
     }
 }
