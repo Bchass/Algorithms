@@ -41,6 +41,21 @@ public class MergeSort {
         }
     }
 
+    // function that sorts left and right
+    void sort(int arr[], int x, int l){
+        if(x<l){
+            // Find the middle
+            int m = (x+l)/2;
+
+            // Sort halves
+            sort(arr,l,m);
+            sort(arr, x, l);
+
+            //merge
+            sort(arr,x,m);
+        }
+    }
+
     // Print the given array
     void printArray(int arr[]) {
         int n = arr.length;
