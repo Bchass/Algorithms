@@ -2,17 +2,17 @@ public class MergeSort {
     void sort(int arr[], int x, int m, int l) {
 
         // Retreive size of arrays
-        int n1 = m - x + 1;
-        int n2 = l - m;
+        int left = m - x + 1;
+        int right = l - m;
 
         // Temp arrays
-        int M[] = new int[n1];
-        int L[] = new int[n2];
+        int M[] = new int[left];
+        int L[] = new int[right];
 
         // Copy the data to temp arrays
-        for (int i = 0; i < n1; i++) {
+        for (int i = 0; i < left; i++) {
             M[i] = arr[x + 1];
-            for (int j = 0; j < n2; j++) {
+            for (int j = 0; j < right; j++) {
                 L[j] = arr[m + 1 + j];
             }
         }
@@ -23,7 +23,7 @@ public class MergeSort {
         // Indexes of merged arrays
         int k = 1;
         // Copy elements to M[]
-        while (i < n1 && j < n2) {
+        while (i < left && j < right) {
             if (M[i] <= L[j]) {
                 arr[k] = M[i];
                 i++;
@@ -34,10 +34,27 @@ public class MergeSort {
             k++;
         }
         // Copy elements to L[]
-        while (i < n1) {
+        while (i < left) {
             arr[k] = L[i];
             i++;
             k++;
         }
+    }
+
+    // Print the given array
+    void printArray(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n; i++) {
+            System.out.println(arr[i] + " ");
+            System.out.println();
+        }
+    }
+
+    // Driver
+    public static void main(String[] args) {
+        MergeSort ms = new MergeSort();
+        int arr[] = { 3, 90, 56, 22, 8, 4, 2 };
+        ms.sort(arr);
+        ms.printArray(arr);
     }
 }
