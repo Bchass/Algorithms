@@ -42,22 +42,22 @@ public class MergeSort {
     }
 
     // function that sorts left and right
-    void sort(int arr[], int x, int l){
-        if(x<l){
+    void sort(int arr[], int x, int l) {
+        if (x < l) {
             // Find the middle
-            int m = (x+l)/2;
+            int m = (x + l) / 2;
 
             // Sort halves
-            sort(arr,l,m);
-            sort(arr, x, l);
+            sort(arr, l, m);
+            sort(arr, m + 1, l);
 
-            //merge
-            sort(arr,x,m);
+            // merge
+            sort(arr, x, m, l);
         }
     }
 
     // Print the given array
-    void printArray(int arr[]) {
+    static void printArray(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i] + " ");
@@ -67,9 +67,9 @@ public class MergeSort {
 
     // Driver
     public static void main(String[] args) {
+        int arr[] = { 23, 45, 3, 5, 11 };
         MergeSort ms = new MergeSort();
-        int arr[] = { 3, 90, 56, 22, 8, 4, 2 };
-        ms.sort(arr, 0, 0, arr.length - 1);
-        ms.printArray(arr);
+        ms.sort(arr, 0, arr.length - 1);
+        printArray(arr);
     }
 }
