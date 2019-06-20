@@ -21,7 +21,7 @@ public class MergeSort {
         int j = 0;
 
         // Indexes of merged arrays
-        int k = 1;
+        int k = r;
         // Copy elements to M[]
         while (i < left && j < right) {
             if (L[i] <= R[j]) {
