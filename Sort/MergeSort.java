@@ -6,12 +6,12 @@ public class MergeSort {
         int right = l - m;
 
         // Temp arrays
-        int X[] = new int[left];
+        int R[] = new int[left];
         int L[] = new int[right];
 
         // Copy the data to temp arrays
         for (int i = 0; i < left; i++) {
-            X[i] = arr[x + 1];
+            R[i] = arr[x + 1];
             for (int j = 0; j < right; j++) {
                 L[j] = arr[m + 1 + j];
             }
@@ -24,8 +24,8 @@ public class MergeSort {
         int k = 1;
         // Copy elements to M[]
         while (i < left && j < right) {
-            if (X[i] <= L[j]) {
-                arr[k] = X[i];
+            if (R[i] <= L[j]) {
+                arr[k] = R[i];
                 i++;
             } else {
                 arr[k] = L[j];
@@ -35,7 +35,7 @@ public class MergeSort {
         }
         // Copy elements to L[]
         while (i < left) {
-            arr[k] = X[i];
+            arr[k] = R[i];
             i++;
             k++;
         }
@@ -54,7 +54,7 @@ public class MergeSort {
             int m = (x + l) / 2;
 
             // Sort halves
-            sort(arr, l, m);
+            sort(arr, x, m);
             sort(arr, m + 1, l);
 
             // merge
