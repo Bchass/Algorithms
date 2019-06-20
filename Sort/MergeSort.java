@@ -1,19 +1,19 @@
 public class MergeSort {
-    void sort(int arr[], int x, int m, int l) {
+    void sort(int arr[], int r, int m, int l) {
 
         // Retreive size of arrays
-        int left = m - x + 1;
+        int left = m - r + 1;
         int right = l - m;
 
         // Temp arrays
-        int R[] = new int[left];
-        int L[] = new int[right];
+        int L[] = new int[left];
+        int R[] = new int[right];
 
         // Copy the data to temp arrays
         for (int i = 0; i < left; i++) {
-            R[i] = arr[x + 1];
+            L[i] = arr[r + 1];
             for (int j = 0; j < right; j++) {
-                L[j] = arr[m + 1 + j];
+                R[j] = arr[m + 1 + j];
             }
         }
         // Indexes of arrays
@@ -24,41 +24,41 @@ public class MergeSort {
         int k = 1;
         // Copy elements to M[]
         while (i < left && j < right) {
-            if (R[i] <= L[j]) {
-                arr[k] = R[i];
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
                 i++;
             } else {
-                arr[k] = L[j];
+                arr[k] = R[j];
                 j++;
             }
             k++;
         }
         // Copy elements to L[]
         while (i < left) {
-            arr[k] = R[i];
+            arr[k] = L[i];
             i++;
             k++;
         }
         // Copy elements to R[]
         while (j < right) {
-            arr[k] = L[j];
+            arr[k] = R[j];
             j++;
             k++;
         }
     }
 
     // function that sorts left and right
-    void sort(int arr[], int x, int l) {
-        if (x < l) {
+    void sort(int arr[], int l, int r) {
+        if (l < r) {
             // Find the middle
-            int m = (x + l) / 2;
+            int m = (l + r) / 2;
 
             // Sort halves
-            sort(arr, x, m);
-            sort(arr, m + 1, l);
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
 
             // merge
-            sort(arr, x, m, l);
+            sort(arr, l, m, r);
         }
     }
 
