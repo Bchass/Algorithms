@@ -6,12 +6,12 @@ public class MergeSort {
         int right = l - m;
 
         // Temp arrays
-        int M[] = new int[left];
+        int X[] = new int[left];
         int L[] = new int[right];
 
         // Copy the data to temp arrays
         for (int i = 0; i < left; i++) {
-            M[i] = arr[x + 1];
+            X[i] = arr[x + 1];
             for (int j = 0; j < right; j++) {
                 L[j] = arr[m + 1 + j];
             }
@@ -24,8 +24,8 @@ public class MergeSort {
         int k = 1;
         // Copy elements to M[]
         while (i < left && j < right) {
-            if (M[i] <= L[j]) {
-                arr[k] = M[i];
+            if (X[i] <= L[j]) {
+                arr[k] = X[i];
                 i++;
             } else {
                 arr[k] = L[j];
@@ -35,8 +35,14 @@ public class MergeSort {
         }
         // Copy elements to L[]
         while (i < left) {
-            arr[k] = L[i];
+            arr[k] = X[i];
             i++;
+            k++;
+        }
+
+        while (j < right){
+            arr[k] = L[j];
+            j++;
             k++;
         }
     }
@@ -67,7 +73,7 @@ public class MergeSort {
 
     // Driver
     public static void main(String[] args) {
-        int arr[] = { 23, 45, 3, 5, 11 };
+        int arr[] = { 12, 11, 13, 5, 6, 7 };
         MergeSort ms = new MergeSort();
         ms.sort(arr, 0, arr.length - 1);
         printArray(arr);
