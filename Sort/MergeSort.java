@@ -39,8 +39,8 @@ public class MergeSort {
             i++;
             k++;
         }
-
-        while (j < right){
+        // Copy elements to R[]
+        while (j < right) {
             arr[k] = L[j];
             j++;
             k++;
