@@ -39,6 +39,8 @@
 - Average: О(<i>n</i><sup>2</sup>) comparisons and swaps
 
 <b>Bubble sort</b>
+
+<b>Class:</b> Sorting algorithm
 <p align="left">
 <img width="280" height="237" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif">
   </p>
@@ -47,7 +49,9 @@
 - Best Case: O(<i>n</i>) comparisons, O(1) O(1) swaps
 - Average: O(<i>n</i><sup>2</sup>) comparisons, O(<i>n</i><sup>2</sup>) O(<i>n</i><sup>2</sup>) swaps
 
-<b>Merge sort<b>
+<b>Merge sort</b>
+
+<b>Class:</b> Sorting algorithm
 <p align="left">
 <img width="300" height="220" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif">
   </p>
