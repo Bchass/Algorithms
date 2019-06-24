@@ -11,7 +11,7 @@ public class MergeSort {
 
         // Copy the data to temp arrays
         for (int i = 0; i < left; i++) {
-            L[i] = arr[r + 1];
+            L[i] = arr[r + i];
             for (int j = 0; j < right; j++) {
                 R[j] = arr[m + 1 + j];
             }
