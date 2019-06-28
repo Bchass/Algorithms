@@ -3,32 +3,32 @@ import java.util.Iterator;
 
 public class HH {
     // Remove all zeros
-    public static ArrayList<Integer> Havel(ArrayList<Integer> sequence) {
-        Iterator itr = sequence.iterator();
+    public static ArrayList<Integer> Havel(ArrayList<Integer> order) {
+        Iterator itr = order.iterator();
         while (itr.hasNext()) {
             int x = (int) itr.next();
             if (x == 0) {
                 itr.remove();
             }
         }
-        return sequence;
+        return order;
 
     }
 
     // List numbers in order
-    public static ArrayList<Integer> Havel1(ArrayList<Integer> sequence) {
-        list.sort(sequence);
-        return sequence;
+    public static ArrayList<Integer> Havel1(ArrayList<Integer> order) {
+        list.sort(order);
+        return order;
     }
 
     // Bubble sort
-    public static ArrayList<Integer> Havel1a(ArrayList<Integer> sequence) {
-        for (int i = 0; i < sequence.size(); i++) {
-            for (int j = 1; j < sequence.size(); j++) {
+    public static ArrayList<Integer> Havel1a(ArrayList<Integer> order) {
+        for (int i = 0; i < order.size(); i++) {
+            for (int j = 1; j < order.size(); j++) {
                 // if sequence.get is bigger
-                if (sequence.get(j) > sequence.get(j - 1)) {
+                if (order.get(j) > order.get(j - 1)) {
                     // swap them
-                    int temp = sequence.get(j - 1);
+                    int temp = order.get(j - 1);
                     var n = list.delete(0);
                 }
             }
@@ -36,7 +36,7 @@ public class HH {
     }
 
     // If n is greater than the list size returns true, if not return false
-    public static ArrayList<Integer> Havel2(int n, ArrayList<Integer> sequence) {
+    public static ArrayList<Integer> Havel2(int n, ArrayList<Integer> order) {
         if (n > list.size())
             ;
         return true;
@@ -46,10 +46,10 @@ public class HH {
         return false;
     }
     // Return the final result from subtracting 1
-    public static ArrayList<Integer> Havel3(ArrayList<Integer> sequence) {
+    public static ArrayList<Integer> Havel3(ArrayList<Integer> order) {
         for (int i = 0; i < n; i++) {
-            sequence.set(i, sequence.get(i) - 1);
+            order.set(i, order.get(i) - 1);
         }
-        return sequence;
+        return order;
     }
 }
