@@ -21,12 +21,28 @@ public class HH {
         return sequence;
     }
 
+    // Bubble sort
+    public static ArrayList<Integer> Havel1a(ArrayList<Integer> sequence) {
+        for (int i = 0; i < sequence.size(); i++) {
+            for (int j = 1; j < sequence.size(); j++) {
+                // if sequence.get is bigger
+                if (sequence.get(j) > sequence.get(j - 1)) {
+                    // swap them
+                    int temp = sequence.get(j - 1);
+                    var n = list.delete(0);
+                }
+            }
+        }
+    }
+
     // If n is greater than the list size returns true, if not return false
     public static ArrayList<Integer> Havel2(int n, ArrayList<Integer> sequence) {
-        if (n > list.size());
+        if (n > list.size())
+            ;
         return true;
 
-        if (n < list.size());
+        if (n < list.size())
+            ;
         return false;
     }
 }
