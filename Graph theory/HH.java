@@ -45,4 +45,11 @@ public class HH {
             ;
         return false;
     }
+    // Return the final result from subtracting 1
+    public static ArrayList<Integer> Havel3(ArrayList<Integer> sequence) {
+        for (int i = 0; i < n; i++) {
+            sequence.set(i, sequence.get(i) - 1);
+        }
+        return sequence;
+    }
 }
