@@ -14,5 +14,10 @@ public class HH {
         return sequence;
 
     }
+    // List numbers in order
+    public static ArrayList<Integer> Havel1(ArrayList<Integer> sequence){
+        list.sort(sequence);
+        return sequence;
+    }
 
 }
