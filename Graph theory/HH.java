@@ -14,10 +14,19 @@ public class HH {
         return sequence;
 
     }
+
     // List numbers in order
-    public static ArrayList<Integer> Havel1(ArrayList<Integer> sequence){
+    public static ArrayList<Integer> Havel1(ArrayList<Integer> sequence) {
         list.sort(sequence);
         return sequence;
     }
 
+    // If n is greater than the list size returns true, if not return false
+    public static ArrayList<Integer> Havel2(int n, ArrayList<Integer> sequence) {
+        if (n > list.size());
+        return true;
+
+        if (n < list.size());
+        return false;
+    }
 }
