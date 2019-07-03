@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Havel {
     // Remove all zeros
-    public static ArrayList<Integer> Havel(ArrayList<Integer> order) {
+    public static ArrayList<Integer> HH(ArrayList<Integer> order) {
         Iterator itr = order.iterator();
         while (itr.hasNext()) {
             int x = (int) itr.next();
