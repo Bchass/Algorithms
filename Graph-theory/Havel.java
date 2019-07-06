@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class Havel {
     // Remove all zeros
     public static ArrayList<Integer> HH(ArrayList<Integer> order) {
-        Iterator itr = order.iterator();
+        Iterator<Integer> itr = order.iterator();
         while (itr.hasNext()) {
             int x = (int) itr.next();
             if (x == 0) {
@@ -38,7 +38,7 @@ public class Havel {
     }
 
     // If n is greater than the list size returns true, if not return false
-    public static ArrayList<Integer> Havel2(int n, ArrayList<Integer> order) {
+    public static boolean Havel2(int n, ArrayList<Integer> order) {
         if (n > list.size())
             ;
         return true;
