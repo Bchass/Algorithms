@@ -48,7 +48,8 @@ public class Havel {
         return false;
     }
     // Return the final result from subtracting 1
-    public static ArrayList<Integer> Havel3(ArrayList<Integer> order) {
+    public static ArrayList<Integer> Havel3(int n,ArrayList<Integer> order) {
+        
         for (int i = 0; i < n; i++) {
             order.set(i, order.get(i) - 1);
         }
