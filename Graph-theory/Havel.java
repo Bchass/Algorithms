@@ -1,6 +1,8 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
+
 
 public class Havel {
     // Remove all zeros
@@ -18,7 +20,7 @@ public class Havel {
 
     // List numbers in order
     public static ArrayList<Integer> Havel1(ArrayList<Integer> order) {
-        list.sort(order);
+        Collections.sort(order);
         return order;
     }
 
@@ -36,9 +38,9 @@ public class Havel {
         }
     }
 
-    // If n is greater than the list size returns true, if not return false
+    // If n is greater than the order size returns true, if not return false
     public static boolean Havel2(int n, ArrayList<Integer> order) {
-        return n > list.size();
+        return n > order.size();
 
     }
 
