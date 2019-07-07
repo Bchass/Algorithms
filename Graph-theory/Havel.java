@@ -38,10 +38,8 @@ public class Havel {
 
     // If n is greater than the list size returns true, if not return false
     public static boolean Havel2(int n, ArrayList<Integer> order) {
-        if (n > order.size()) {
-            return true;
-        }
-        return false;
+        return n > list.size();
+
     }
 
     // Return the final result from subtracting 1
