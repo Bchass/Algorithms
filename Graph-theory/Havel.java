@@ -1,5 +1,4 @@
 
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -39,17 +38,15 @@ public class Havel {
 
     // If n is greater than the list size returns true, if not return false
     public static boolean Havel2(int n, ArrayList<Integer> order) {
-        if (n > list.size())
-            ;
-        return true;
-
-        if (n < list.size())
-            ;
+        if (n > order.size()) {
+            return true;
+        }
         return false;
     }
+
     // Return the final result from subtracting 1
-    public static ArrayList<Integer> Havel3(int n,ArrayList<Integer> order) {
-        
+    public static ArrayList<Integer> Havel3(int n, ArrayList<Integer> order) {
+
         for (int i = 0; i < n; i++) {
             order.set(i, order.get(i) - 1);
         }
