@@ -32,10 +32,11 @@ public class Havel {
                 if (order.get(j) > order.get(j - 1)) {
                     // swap them
                     int temp = order.get(j - 1);
-                    var n = list.delete(0);
+                    var n = order.remove(0);
                 }
             }
         }
+        return order;
     }
 
     // If n is greater than the order size returns true, if not return false
