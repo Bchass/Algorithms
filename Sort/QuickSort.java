@@ -18,7 +18,7 @@ public class QuickSort {
             for (int i = 0; i < arr.length; i++) {
                 arr[i] = sc.nextInt();
             }
-            // Calls methods to apply QS
+            // Calls functions to apply QS
             QS(arr, 0, arr.length - 1);
 
             System.out.println("The values you have entered:");
@@ -33,7 +33,7 @@ public class QuickSort {
         }
     }
 
-    // Method to print user inputs values to an array
+    // Function to print user inputs values to an array
     // if true numbers will print -- > array
     public static boolean printArr(int[] arr) {
 
@@ -45,7 +45,7 @@ public class QuickSort {
         return true;
     }
 
-    // Call upon partition method
+    // Call upon partition 
     public static void QS(int arr[], int start, int end) {
         if (start < end) {
             int partitionIndex = partition(arr, start, end);
@@ -55,7 +55,7 @@ public class QuickSort {
         }
     }
 
-    // Method partition
+    // partition
     private static int partition(int arr[], int start, int end) {
         int pivot = arr[end];
         int i = (start - 1);
