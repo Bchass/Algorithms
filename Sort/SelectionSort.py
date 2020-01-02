@@ -1,23 +1,17 @@
 import array as arr
 
-def SelectionSort(arr):
+arr = [3, 78, 90, 22, 33, 41, 2]
 
+for i in range(len(arr)):
+        min = i
+        for j in range(i  + 1, len(arr)):
+            if arr[min] > arr[j]:
+                min = j
 
+                arr[i], arr[min] = arr[min], arr[i]
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 # Driver
-    def main():
-        SS = SelectionSort()
-        arr = [3, 78, 90, 22, 33, 41, 2]
-        SS.SelectionSort(arr)
-        print(arr)
+print ("Sorted:")
+for i in range(len(arr)):
+    print("%d"%arr[i])
