@@ -88,9 +88,3 @@
 <p align="left">
   <img width="417" height="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/617px-K-means_convergence.gif">
   </p>
-  
-<b>Havel-Hakimi</b>
- <p align="left">
-    <img width="417" height="400" src="https://i.stack.imgur.com/QJggY.png">
-    </p>
-    <i>Given a finite list of nonnegative integers, is there a simple graph such that its degree sequence is exactly this list.</i>
