@@ -1,54 +1,48 @@
 import array as arr
 
-def MergeSort(arr, r, m, l):
-    left = m - r + 1
-    right = l - m
+def MergeSort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
 
-    L = [left]
-    R = [right]
+        Left = arr[:mid]
+        Right = arr[mid:]
 
-    for i in range(left):
-        L[i] = arr[r + 1]
-        for j in range (right):
-            R[j] = arr[ m + 1 + j]
+        MergeSort(Left)
+        MergeSort(Right)
 
-            i = 0
-            j = 0
 
-            k = r
+        i = j = k = 0
 
-            while i < left & j < right:
-                if L[i] <= R[j]:
-                    arr[k] = L[i]
-                    return i + 1
+        while i < len(Left) and j < len(Right):
+            if Left[i] < Right[j]:
+                arr[k] = Left[i]
+                i+= 1
 
-            else:
-                arr[k] = R[j]
-                return j + 1
-                return k + 1
+        else:
+            arr[k] = Right[j]
+            j+=1
+            k+=1
 
-                while i < left:
-                    arr[k] = L[i]
-                    return i + 1
-                    return k + 1
+        while i < len(Left):
+            arr[k] = Left[i]
+            i+=1
+            k+=1
 
-                    while j < right:
-                        arr[k] = R[j]
-                        return j + 1
-                        return k + 1
+        while j < len(Right):
+            arr[k] = Right[j]
+            j+=1
+            k+=1
 
-def sort(arr, l, r):
-    if l < r:
-        m = (l + r) / 2
-        sort(arr, l, m)
-        sort(arr, m + 1, r)
-        
-        sort(arr, l, m, r)
+def printlist(arr):
+    for i in range(len(arr)):
+        print(arr[i])
+    print()
 
 
 
 #Driver
-arr = [12, 11, 13, 5, 6, 7]
-n = len(arr)
-MergeSort(arr, 0, len(arr) - 1)
+arr = [6, 5, 13, 22, 8, 1, 3]
+printlist(arr)
+MergeSort(arr)
+print("Sorted:")
 print(arr)
