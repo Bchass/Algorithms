@@ -7,19 +7,19 @@ def Binary(arr, t, k, x):
         if arr[middle] == x:
             return middle
 
-        if arr[middle] > x:
+        elif arr[middle] > x:
             return Binary(arr, 1, middle - 1, x)
-
+        else:
             return Binary(arr, middle + 1, k, x)
-            return - 1
+    else:
+        return - 1
 
 
 # Driver
 arr = [2, 9, 80, 77, 36, 1, 5, 4]
 x = 9
-n = len(arr)
-result = Binary(arr, 0, n - 1, x)
-if result == 1:
+result = Binary(arr, 0, len(arr) - 1, x)
+if result == -1:
     print("Target is not present")
 else:
-    print("Target is present at index: " + result)
+    print("Target is present at index:", result)
