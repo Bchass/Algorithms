@@ -46,7 +46,9 @@ def sort(arr, l, r):
         sort(arr, l, m, r)
 
 
-# Driver
+
+#Driver
+arr = [12, 11, 13, 5, 6, 7]
 n = len(arr)
-for i in range(n):
-    print(arr[i] + " ")
+MergeSort(arr, 0, len(arr) - 1)
+print(arr)
