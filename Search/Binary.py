@@ -7,11 +7,11 @@ def Binary(arr, t, k, x):
         if arr[middle] == x:
             return middle
 
-        elif arr[middle] > x:
+        if arr[middle] > x:
             return Binary(arr, 1, middle - 1, x)
-        else:
+        
             return Binary(arr, middle + 1, k, x)
-    else:
+    
         return - 1
 
 
