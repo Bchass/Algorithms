@@ -7,7 +7,7 @@
 
 <b>Class:</b> Sorting algorithm
 
-<i>(I've decided to add users input as a test)</i>
+<i>(QuickSort available also for users input)</i>
 <p align="left">
 <img width="220" height="168" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sorting_quicksort_anim.gif/220px-Sorting_quicksort_anim.gif">
   </p>
