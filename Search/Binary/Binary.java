@@ -1,4 +1,4 @@
-package Search;
+package Search.Binary;
 
 // Return index of x
 class Binary {

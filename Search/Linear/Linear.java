@@ -1,4 +1,4 @@
-package Search;
+package Search.Linear;
 
 class Linear {
     public static int search(int arr[], int x) { // Loop through to find the given target
