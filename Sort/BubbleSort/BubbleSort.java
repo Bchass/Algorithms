@@ -1,4 +1,5 @@
-package Sort;
+package Sort.BubbleSort;
+
 public class BubbleSort {
     void sort(int arr[], int n) {
 

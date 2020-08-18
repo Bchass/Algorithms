@@ -1,4 +1,4 @@
-package Sort;
+package Sort.MergeSort;
 public class MergeSort {
     void sort(int arr[], int r, int m, int l) {
 

@@ -1,4 +1,4 @@
-package Sort;
+package Sort.SelectionSort;
 public class SelectionSort {
     void sort(int arr[]) {
         // move boundary within array

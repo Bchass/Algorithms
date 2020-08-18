@@ -1,4 +1,4 @@
-package Sort;
+package Sort.QuickSort;
 // Take user input for QuickSort
 import java.util.Arrays;
 import java.util.InputMismatchException;
