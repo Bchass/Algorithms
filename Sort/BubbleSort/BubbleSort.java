@@ -3,45 +3,37 @@ package Sort.BubbleSort;
 public class BubbleSort {
     void sort(int arr[], int n) {
 
-        int i, j, temp;
-        boolean swapped;
-        for (i = 0; i < n - 1; i++) {
+        int temp;
+        boolean sorted = false;
 
-        }
-        swapped = false;
-        for (j = 0; j < n - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                // switch a[j] & a[j + 1]
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                swapped = true;
+        while (!sorted) {
+            sorted = true;
+            for (int i = 0; i < arr.length - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                	// switch arr[i] & a[i+1]
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    sorted = false;
+                }
 
             }
-            // Break
-            if (swapped == false)
-                break;
         }
-
     }
-
     // Print given array
-    static void printArray(int arr[], int size) {
+    static void printArr(int arr[], int size) {
         int i;
         for (i = 0; i < size; i++) {
             System.out.println(arr[i]);
             System.out.println();
-
         }
-
     }
-
     // Driver
     public static void main(String[] args) {
-        BubbleSort bs = new BubbleSort();
-        int arr[] = { 8, 4, 3, 5, 7 };
+        BubbleSort BS = new BubbleSort();
+        int arr[] = { 9,2,5,3,10,7,4,6,1,8 };
         int n = arr.length;
-        bs.sort(arr, n);
-        printArray(arr, n);
+        BS.sort(arr, n);
+        printArr(arr, n);
     }
 }
