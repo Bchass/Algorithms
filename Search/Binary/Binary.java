@@ -15,7 +15,7 @@ class Binary {
             // Element right side of array
             return binary(arr, middle + 1, k, x);
         }
-        // Return -1 if elemenent is not present in the index
+        // Return -1 if element is not present in the index
         return -1;
 
     }
