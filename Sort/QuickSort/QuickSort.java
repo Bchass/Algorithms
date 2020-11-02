@@ -30,4 +30,23 @@ private static int partition(int arr[],int start,int end){
 
     return i + 1;
 }
+// Print the given array
+static void printArr(int arr[])
+{
+    int n = arr.length;
+    for(int i = 0; i < n; i++)
+    {
+        System.out.println(arr[i] + " ");
+        System.out.println();
+    }
+}
+
+// Driver
+public static void main(String[]args){
+    int arr[] = { 5, 9, 20, 34, 13, 89, 3};
+    int n = arr.length;
+    QuickSort.QS(arr, 0, n - 1);
+    printArr(arr);
+
+}
 }
