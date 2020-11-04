@@ -27,7 +27,7 @@
 - Best Case: О(<i>n</i><sup>2</sup>) comparisons, О(<i>n</i>) swaps
 - Average: О(<i>n</i><sup>2</sup>) comparisons, О(<i>n</i>) swaps
 
-<b>Insertion sort</b>
+<b>Insertion sort / Shellsort</b>
 
 <b>Class:</b> Sorting algorithm
 <p align="left">
@@ -88,3 +88,10 @@
 <p align="left">
   <img width="417" height="400" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/K-means_convergence.gif/617px-K-means_convergence.gif">
   </p>
+  
+<b>Raidx Sort</b>
+
+
+<b>Class:</b> Sorting algorithm
+
+- Worst Case: O(<i>w</i> + <i>n</i>)
