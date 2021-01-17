@@ -1,6 +1,5 @@
 def QuickSort(list):
-    length = len(list)
-    if length <= 1:
+    if len(list) <= 1:
         return list
     else:
         pivot = list.pop()
