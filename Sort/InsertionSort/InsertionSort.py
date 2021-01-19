@@ -1,7 +1,6 @@
 import array as arr
 def InsertionSort(arr):
-    n = len(arr)
-    for i in range(n):
+    for i in range(len(arr)):
         key = arr[i]
         j = i - 1
 
