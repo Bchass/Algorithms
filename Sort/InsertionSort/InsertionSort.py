@@ -1,4 +1,3 @@
-import array as arr
 def InsertionSort(arr):
     for i in range(len(arr)):
         key = arr[i]
@@ -14,7 +13,5 @@ def InsertionSort(arr):
 
 arr = [23, 45, 3, 5, 11]
 InsertionSort(arr)
-#Driver
-print("Sorted")
 for i in range(len(arr)):
-    print("%d"%arr[i])
+    print(arr[i])
