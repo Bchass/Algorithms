@@ -1,8 +1,7 @@
-import array as arr
-
 arr = [3, 78, 90, 22, 33, 41, 2]
 
-for i in range(len(arr)):
+def SS(arr):
+    for i in range(len(arr)):
         min = i
         for j in range(i  + 1, len(arr)):
             if arr[min] > arr[j]:
@@ -12,6 +11,5 @@ for i in range(len(arr)):
 
  
 # Driver
-print ("Sorted:")
-for i in range(len(arr)):
-    print("%d"%arr[i])
+SS(arr)
+print(arr)
