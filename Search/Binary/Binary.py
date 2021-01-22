@@ -1,5 +1,3 @@
-import array as arr
-
 def Binary(arr, t, k, x):
     if k >= 1:
         middle = 1 + (k - 1) // 2
