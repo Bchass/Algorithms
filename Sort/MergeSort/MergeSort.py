@@ -1,5 +1,3 @@
-import array as arr
-
 def MergeSort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -42,7 +40,5 @@ def printlist(arr):
 
 #Driver
 arr = [6, 5, 13, 22, 8, 1, 3]
-printlist(arr)
 MergeSort(arr)
-print("Sorted:")
 print(arr)

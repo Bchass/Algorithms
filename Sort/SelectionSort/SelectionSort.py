@@ -1,5 +1,3 @@
-arr = [3, 78, 90, 22, 33, 41, 2]
-
 def SS(arr):
     for i in range(len(arr)):
         min = i
@@ -11,5 +9,6 @@ def SS(arr):
 
  
 # Driver
+arr = [3, 78, 90, 22, 33, 41, 2]
 SS(arr)
 print(arr)
